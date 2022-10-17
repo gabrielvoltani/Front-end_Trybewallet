@@ -6,12 +6,12 @@ import getCurrencies from '../services/CurrencyAPI';
 
 class WalletForm extends Component {
   state = {
-    expense: '',
+    id: 0,
+    value: '',
     description: '',
     currency: 'USD',
-    paymentType: 'Dinheiro',
-    expenseType: 'Alimentação',
-    id: 0,
+    method: 'Dinheiro',
+    tag: 'Alimentação',
     exchangeRates: {},
   };
 
@@ -38,18 +38,21 @@ class WalletForm extends Component {
     });
     dispatch(addExpense(this.state));
     this.setState({
-      expense: '',
+      value: '',
       description: '',
+      currency: 'USD',
+      method: 'Dinheiro',
+      tag: 'Alimentação',
     });
   };
 
   render() {
     const {
-      expense,
+      value,
       description,
       currency,
-      paymentType,
-      expenseType,
+      method,
+      tag,
     } = this.state;
 
     const {
@@ -63,8 +66,8 @@ class WalletForm extends Component {
             type="number"
             data-testid="value-input"
             placeholder="Insert your expense"
-            name="expense"
-            value={ expense }
+            name="value"
+            value={ value }
             onChange={ this.handleChange }
           />
           <input
@@ -87,18 +90,18 @@ class WalletForm extends Component {
           </select>
           <select
             data-testid="method-input"
-            name="paymentType"
-            value={ paymentType }
+            name="method"
+            value={ method }
             onChange={ this.handleChange }
           >
             <option value="Dinheiro">Dinheiro</option>
-            <option value="Cartão de Crédito">Cartão de crédito</option>
+            <option value="Cartão de crédito">Cartão de crédito</option>
             <option value="Cartão de débito">Cartão de débito</option>
           </select>
           <select
             data-testid="tag-input"
-            name="expenseType"
-            value={ expenseType }
+            name="tag"
+            value={ tag }
             onChange={ this.handleChange }
           >
             <option value="Alimentação">Alimentação</option>

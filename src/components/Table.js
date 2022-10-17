@@ -38,12 +38,12 @@ class Table extends Component {
             return (
               <tr key={ exp.id }>
                 <td>{exp.description}</td>
-                <td>{exp.expenseType}</td>
-                <td>{exp.paymentType}</td>
-                <td>{Number(exp.expense).toFixed(2)}</td>
+                <td>{exp.tag}</td>
+                <td>{exp.method}</td>
+                <td>{Number(exp.value).toFixed(2)}</td>
                 <td>{exp.exchangeRates[exp.currency].name}</td>
                 <td>{exchangeValue.toFixed(2)}</td>
-                <td>{(exp.expense * Number(exchangeValue)).toFixed(2)}</td>
+                <td>{(exp.value * Number(exchangeValue)).toFixed(2)}</td>
                 <td>Real</td>
                 <td>
                   <button

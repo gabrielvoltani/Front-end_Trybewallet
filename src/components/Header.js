@@ -6,7 +6,7 @@ class Header extends Component {
   sumExpenses = ({ expenses } = this.props) => {
     let sumExp = 0;
     expenses.forEach((exp) => {
-      const expValue = exp.expense;
+      const expValue = exp.value;
       const exchangeValue = exp.exchangeRates[exp.currency].ask;
       sumExp += expValue * exchangeValue;
     });
