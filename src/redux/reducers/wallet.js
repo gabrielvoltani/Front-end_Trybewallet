@@ -1,4 +1,8 @@
-import { SAVE_EXPENSE, ADD_EXPENSE, DEL_EXPENSE } from '../actions';
+import {
+  SAVE_EXPENSE,
+  ADD_EXPENSE,
+  DEL_EXPENSE,
+} from '../actions';
 
 const INITIAL_STATE = {
   currencies: [],
