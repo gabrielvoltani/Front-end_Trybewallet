@@ -5,62 +5,62 @@ import { renderWithRouterAndRedux } from './renderWith';
 import App from '../../App';
 import mockData from './mockData';
 
-const STATE = {
-  user: {
-    email: 'abc@def.com',
-    senha: '123564',
-  },
-  wallet: {
-    editor: false,
-    idToEdit: 0,
-    currencies: [
-      'USD',
-      'CAD',
-      'GBP',
-      'ARS',
-      'BTC',
-      'LTC',
-      'EUR',
-      'JPY',
-      'CHF',
-      'AUD',
-      'CNY',
-      'ILS',
-      'ETH',
-      'XRP',
-      'DOGE',
-    ],
-    expenses: [
-      {
-        id: 0,
-        value: '100',
-        description: 'Viagem',
-        currency: 'EUR',
-        method: 'Dinheiro',
-        tag: 'Lazer',
-        exchangeRates: mockData,
-      },
-      {
-        id: 1,
-        value: '20',
-        description: 'Passagem',
-        currency: 'DOGE',
-        method: 'Cartão de Crédito',
-        tag: 'Transporte',
-        exchangeRates: mockData,
-      },
-      {
-        id: 2,
-        value: '30',
-        description: 'Dogão',
-        currency: 'BTC',
-        method: 'Cartão de Débito',
-        tag: 'Alimentação',
-        exchangeRates: mockData,
-      },
-    ],
-  },
-};
+// const STATE = {
+//   user: {
+//     email: 'abc@def.com',
+//     senha: '123564',
+//   },
+//   wallet: {
+//     editor: false,
+//     idToEdit: 0,
+//     currencies: [
+//       'USD',
+//       'CAD',
+//       'GBP',
+//       'ARS',
+//       'BTC',
+//       'LTC',
+//       'EUR',
+//       'JPY',
+//       'CHF',
+//       'AUD',
+//       'CNY',
+//       'ILS',
+//       'ETH',
+//       'XRP',
+//       'DOGE',
+//     ],
+//     expenses: [
+//       {
+//         id: 0,
+//         value: '100',
+//         description: 'Viagem',
+//         currency: 'EUR',
+//         method: 'Dinheiro',
+//         tag: 'Lazer',
+//         exchangeRates: mockData,
+//       },
+//       {
+//         id: 1,
+//         value: '20',
+//         description: 'Passagem',
+//         currency: 'DOGE',
+//         method: 'Cartão de Crédito',
+//         tag: 'Transporte',
+//         exchangeRates: mockData,
+//       },
+//       {
+//         id: 2,
+//         value: '30',
+//         description: 'Dogão',
+//         currency: 'BTC',
+//         method: 'Cartão de Débito',
+//         tag: 'Alimentação',
+//         exchangeRates: mockData,
+//       },
+//     ],
+//   },
+// };
 
 const teste = [
   {
